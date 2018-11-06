@@ -11,10 +11,10 @@
 |
 */
 
-Route::get('app', function() {
-    return view('')
-})
+Route::get('/test', function() {
+    return view('test');
+});
 
-Route::get('/{any}', function () {
+Route::get('/', function () {
     return view('layouts/vue_app');
-})->where('any', '.*');
+});
